@@ -1,0 +1,660 @@
+/* ===================================
+   Dog Market
+   style.css Part1
+=================================== */
+
+/* リセット */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+    color:#333;
+    line-height:1.6;
+}
+
+/* コンテナ */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ======================
+   Header
+====================== */
+
+header{
+
+    background:linear-gradient(135deg,#ff9800,#ffb74d);
+
+    color:white;
+
+    padding-bottom:60px;
+
+}
+
+/* ======================
+   Navigation
+====================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+nav h1{
+
+    font-size:36px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ffe082;
+
+}
+
+/* ======================
+   Hero
+====================== */
+
+.hero{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+.hero h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+/* ======================
+   Search
+====================== */
+
+.search-box{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.search-box input{
+
+    width:260px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.search-box select{
+
+    width:220px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.search-box button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ff5722;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#e64a19;
+
+}
+
+/* ======================
+   Main
+====================== */
+
+main{
+
+    padding:60px 0;
+
+}
+
+section{
+
+    margin-bottom:60px;
+
+}
+
+section h2{
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+    color:#333;
+
+}
+
+/* ======================
+   Dog Cards
+====================== */
+
+.dogs{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:20px;
+
+}
+
+.card-body h3{
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.card-body p{
+
+    margin:8px 0;
+
+    color:#666;
+
+}
+
+.card-body h4{
+
+    margin:15px 0;
+
+    color:#ff5722;
+
+    font-size:28px;
+
+}
+
+/* ======================
+   Buttons
+====================== */
+
+.favorite,
+.detailBtn{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.favorite{
+
+    background:#ec407a;
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.favorite:hover{
+
+    background:#d81b60;
+
+}
+
+.detailBtn{
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+.detailBtn:hover{
+
+    background:#fb8c00;
+
+}
+
+/* ======================
+   Popular Dogs
+====================== */
+
+.breed-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+.breed-item{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.breed-item:hover{
+
+    background:#ff9800;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+/* ======================
+   News
+====================== */
+
+.news-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.news-item{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.news-item h3{
+
+    margin-bottom:10px;
+
+}
+
+.news-item p{
+
+    color:#777;
+
+}
+
+/* ======================
+   Modal
+====================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.modal-content{
+
+    background:white;
+
+    width:90%;
+
+    max-width:700px;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    position:relative;
+
+    animation:fadeIn .3s ease;
+
+}
+
+.modal-content img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+.modal-content h2{
+
+    margin-bottom:15px;
+
+}
+
+.modal-content p{
+
+    margin:10px 0;
+
+    color:#555;
+
+}
+
+#reserveBtn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#43a047;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+#reserveBtn:hover{
+
+    background:#388e3c;
+
+}
+
+#close{
+
+    position:absolute;
+
+    top:15px;
+
+    right:20px;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+}
+
+/* ======================
+   Footer
+====================== */
+
+footer{
+
+    background:#333;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer h3{
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ======================
+   Animation
+====================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ======================
+   Responsive
+====================== */
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+.search-box input,
+.search-box select,
+.search-box button{
+
+    width:100%;
+
+}
+
+.modal-content{
+
+    width:95%;
+
+    padding:20px;
+
+}
+
+.modal-content img{
+
+    height:220px;
+
+}
+
+.card img{
+
+    height:200px;
+
+}
+
+}
